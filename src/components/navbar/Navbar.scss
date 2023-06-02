@@ -1,0 +1,92 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    transition : 0.5s all ease;
+    position: sticky;
+    top: 0;
+
+    &.active {
+        background-color: #00cc00;;
+        
+        .container {
+            .logo {
+                .text {
+                    color: black;
+                }
+            }
+
+            .links {
+                color: black;
+            }
+        }
+    }
+
+    .container {
+        width: 1400px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0px;
+
+        .logo {
+            font-size: 34px;
+            font-weight: bold;
+            color: #00cc00;;
+            .text{}
+        }
+
+        .links {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            font-weight: bolder;
+            color: #00cc00;
+
+            .user {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                cursor: pointer;
+                position: relative;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    border: 2px solid black;
+                }
+
+                .options {
+                    position: absolute;
+                    top: 55px;
+                    right: 0;
+                    padding: 40px;
+                    background-color: white;
+                    border-radius: 15px;
+                    border: 2px  solid black;
+                    color: black;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+            }
+
+            button {
+                color: black;
+                background-color: #00cc00;
+                padding: 10px 20px;
+                border-radius: 15px;
+                border: 2px solid #00cc00;
+                cursor: pointer;
+
+                &:hover {
+                    color: white;
+                    border-color: white;
+                }
+            }
+        }
+    }
+}
